@@ -111,10 +111,10 @@ local function applyStateBags(src)
     local rpName = buildRPName(src)
     if rpName and rpName ~= '' then
         state:set('rpName', rpName, true)
-        TriggerClientEvent('valentino-nametags:client:setName', -1, src, rpName)
+        TriggerClientEvent('ragdoll-nametags:client:setName', -1, src, rpName)
     else
         state:set('rpName', nil, true)
-        TriggerClientEvent('valentino-nametags:client:setName', -1, src, nil)
+        TriggerClientEvent('ragdoll-nametags:client:setName', -1, src, nil)
     end
     if state.nametagMasked == nil then
         state:set('nametagMasked', false, true)
@@ -131,7 +131,7 @@ AddEventHandler('onResourceStart', function(res)
         applyStateBags(tonumber(src))
     end
 end)
-RegisterNetEvent('valentino-nametags:server:refreshName', function()
+RegisterNetEvent('ragdoll-nametags:server:refreshName', function()
     local src = source
     applyStateBags(src)
 end)
