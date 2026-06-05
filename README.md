@@ -1,4 +1,4 @@
-# valentino Nametags
+# Ragdoll Nametags
 
 A performance-focused nametag system for FiveM. Designed with optimization in mind!
 
@@ -21,9 +21,9 @@ A performance-focused nametag system for FiveM. Designed with optimization in mi
 
 ## Installation
 1. Ensure [ox_lib](https://github.com/overextended/ox_lib) is installed and started.
-2. Place the `valentino-nametags` folder into your resources directory.
-3. Add `ensure valentino-nametags` to your `server.cfg`.
+2. Place the `ragdoll-nametags` folder into your resources directory.
+3. Add `ensure ragdoll-nametags` to your `server.cfg`.
 4. Customize colors, fonts, and distances in `config.lua`.
 
 ---
-*Developed by **valentinoScripts***
+*Developed by **Lone/Ragdoll Development***
